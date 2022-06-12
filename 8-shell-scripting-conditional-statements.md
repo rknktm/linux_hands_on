@@ -1,4 +1,4 @@
-# Hands-on Linux-07 : Shell Scripting/Conditional Statements
+i# Hands-on Linux-07 : Shell Scripting/Conditional Statements
 
 Purpose of the this hands-on training is to teach the students how to use conditional statements in shell.
 

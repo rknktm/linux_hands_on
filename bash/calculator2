@@ -1,0 +1,22 @@
+#!/bin/bash
+read X Y
+expr $X + $Y
+expr $X - $Y
+expr $X \* $Y
+expr $X / $Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
