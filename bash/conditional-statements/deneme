@@ -1,8 +1,0 @@
-#!/bin/bash
-read -p "NAME:" name
-if [[ $name = "erkan" ]]
-then
-	echo "Merhaba $name"
-else
-	echo "Sana da merhaba $name"
-fi
