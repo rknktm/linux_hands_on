@@ -1,0 +1,11 @@
+#!/bin/bash
+git --version
+if [[ $(echo $?) -eq 0 ]]
+then
+	echo " Already exits"
+else
+	sudo yum update -y
+	sudo yum install git -y:wq
+
+fi
+  

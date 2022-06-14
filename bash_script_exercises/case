@@ -1,0 +1,27 @@
+#!/bin/bash
+read -p " First Number: " num1
+read -p " Second Number: " num2
+read -p " Select operation from menu
+1 - addition
+2 - subtraction
+3 - multipication
+4 - division
+" operation
+
+case $operation in 
+  "1")
+	echo "result =$(($num1+num2))"
+  ;; 
+  "3")
+        echo "result =$(($num1*num2))"
+  ;; 
+  "4")
+        echo "result =$(($num1/num2))"
+  ;; 
+  "2")
+        echo "result =$(($num1-num2))"
+  ;;
+  "*")
+	echo " Wrong choice "
+  ;;
+esac

@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ -e "eco" ]]
+then
+echo "Already created"
+else
+touch "eco"
+echo "creating"
+fi

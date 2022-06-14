@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ -z "$(ls -al ./ | grep .git)" ]];then
+echo " Folder is not empty"
+echo $(ls -al | wc |cut -f3)
+fi
+
+

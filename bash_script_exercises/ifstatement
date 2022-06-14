@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p " Enter a number : " number
+if [[ $number -gt 0 ]]
+then
+echo " The number is pozitif"
+elif [[ $number -eq 0 ]]
+then
+	echo "The number is equal to 0"
+else
+echo " The number is negatif"
+fi
