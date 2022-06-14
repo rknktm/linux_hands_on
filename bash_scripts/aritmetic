@@ -1,4 +1,0 @@
-#!/bin/bash
-read func
-printf "%.3f" $(echo $func | bc -l)
-
