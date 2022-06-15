@@ -1,11 +1,11 @@
 #!/bin/bash
-read n
+read -p "Enter Size: " n
 sum=0
 i=1
-while [ $i -le $n ];do 
-read k
-sum=$((k+sum))
-i=$(($i+1))
+while [[ $i -le $n ]]; do 
+read -p " Enter the  Numbers: " k
+sum=$(( $k+$sum ))
+i=$(( $i+1 ))
 done
-printf "%.3f" $(echo "$sum/$n" | bc)
-
+printf "%.3f\n" $( echo "$sum/$n" | bc -l )
+#echo "scale=5;$sum/$n" | bc

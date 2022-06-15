@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p " Name of the file: " file
+if [ -e $file ]
+then
+  echo " File exist "
+else
+  echo " File could not be found "
+  fi

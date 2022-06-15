@@ -1,0 +1,13 @@
+#!/bin/bash
+read -p " Type of Vehicle :" Vehicle
+case $Vehicle in
+  "Auto" )
+  echo " $Vehicle vermitung ist ab 50$ ";;
+  "Bicycle" )
+  echo " $Vehicle vermitung ist ab 5$ ";;
+  "Motorcyle" )
+  echo " $Vehicle vermitung ist ab 30$ ";;
+   * )
+  echo " $Vehicle is not defined ";;
+
+esac

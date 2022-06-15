@@ -1,0 +1,10 @@
+#!/bin/bash
+OS=( "Linux" "Windows" "Mac" )
+echo ${OS[@]} # give all elements
+echo ${OS[2]} #give second elements
+echo ${!OS[@]} #give index of elements
+echo ${#OS[@]} # total number of elements
+OS[3]="Unix"  # assign element to array
+echo ${OS[3]}
+unset OS[1] # delete element from array
+echo ${OS[@]}

@@ -1,0 +1,20 @@
+#!/bin/bash
+read -p " File Name: " file
+if [ -f $file ] 
+then
+  echo " File exist"
+  if [ -w $file ]  #with chmod -w or +w you can change mode of the file (writeable or not)
+  then
+    echo " You can smt write in it. To exist please press CTRL+D "
+    cat >> $file
+  fi 
+else
+  echo " File is not exist ..."
+  read -p " Would you like to create it ? " answer
+  if [ $answer == yes ]
+  then
+    touch $file && echo " $file is created."
+  else
+    echo "Process is  ending ..."
+  fi
+fi
