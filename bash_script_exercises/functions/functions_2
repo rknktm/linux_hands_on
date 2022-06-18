@@ -1,0 +1,7 @@
+while read names
+do 
+Welcome () {
+    echo "Welcome to Linux Lessons $@"
+}
+Welcome $names
+done

@@ -119,3 +119,14 @@ square of 3 is 9
 square of 4 is 16
 square of 5 is 25
 square of 6 is 36
+
+
+9) ls date | awk 'OFS="/" {print$2,$3,$6}' #output field separator
+
+10)  ls -al | awk '{print NR,$0}   #numbering lines
+11)  ls -al | awk '$7>25{sum+=$7}END{print sum}'
+  or  ls -al | awk '{if($7>25) sum+=$7} END {print sum}'  # file size greater than 25 then add them to sum end print 
+
+12) ls -al |  awk '{print $1,$NF}' # show first end last field
+13) ls -al | awk '{ print NR "-"}'
+14) awk '$4=="" {print "Not all scores are available for " $1}' 

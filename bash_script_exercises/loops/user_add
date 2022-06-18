@@ -1,0 +1,18 @@
+#! /bin/bash
+
+echo "numbers:"
+
+for number in {1..10..2}
+do
+    echo $number
+done
+
+echo "names:"
+
+for name in joe david matt john timothy
+do
+    sudo useradd $name
+    #sudo userdel $name
+    sleep 1
+done
+    tail -5 /etc/passwd

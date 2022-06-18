@@ -1,0 +1,10 @@
+#!/bin/bash
+while read names
+do 
+Welcome () {
+    echo "Welcome to Linux Lessons $@"
+    return 55
+}
+Welcome $names
+echo $?
+done

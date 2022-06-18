@@ -1,0 +1,18 @@
+#!/bin/bash
+read -p "To play press y/n: " letter
+if [[ $letter == "y" ]] 
+then
+  read -p "Enter a number : " line 
+  for i in $line
+    do
+      sleep  1
+      echo "Square of the given number is " $(( i**2 ))
+      sleep 1
+    done
+else
+    echo "Thanx for playing..."
+    sleep 1; exit
+fi
+
+
+#scp -i ~/.ssh/oliver.pem create-ec2.sh ec2-user@54.89.51.248:/home/ec2-user/lesson/loops secure kopyalama

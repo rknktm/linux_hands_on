@@ -1,0 +1,12 @@
+#!/bin/bash
+read -p "Input a number : " num 
+Welcome () {
+    if (( $num >= 9 )) 
+    then
+     return 5
+    else
+    return 0
+    fi
+}
+Welcome 
+echo $?

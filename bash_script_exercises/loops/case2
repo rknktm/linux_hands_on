@@ -5,7 +5,7 @@ case $Vehicle in
   echo " $Vehicle vermitung ist ab 50$ ";;
   "Bicycle" )
   echo " $Vehicle vermitung ist ab 5$ ";;
-  "Motorcyle" )
+  "Motorcycle" )
   echo " $Vehicle vermitung ist ab 30$ ";;
    * )
   echo " $Vehicle is not defined ";;

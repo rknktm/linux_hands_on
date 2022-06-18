@@ -9,3 +9,6 @@ then
 else
 echo " The number is negatif"
 fi
+
+#echo -n "Enter a number: "
+# read $number

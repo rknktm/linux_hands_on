@@ -1,0 +1,11 @@
+#!/bin/bash
+function_1 () {
+  echo "This is from the first function"
+function_2
+}
+
+function_2 () {
+  echo "This is from the second function"
+}
+
+function_1

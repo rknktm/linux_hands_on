@@ -1,0 +1,6 @@
+#!/bin/bash
+wellcome () {
+  echo "wellcome to everybody"
+}
+
+wellcome
